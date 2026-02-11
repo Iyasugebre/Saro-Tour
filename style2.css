@@ -1,0 +1,112 @@
+/* --------------------
+   Reset
+-------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------
+   Inner Section (Package Rows)
+-------------------- */
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 220px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Child blocks inside .inner */
+.inner > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Image cards inside inner */
+.inner div[style*="background-image"] {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Text content area */
+.inner div:nth-child(2) {
+    flex: 1;
+    padding: 15px;
+    background: linear-gradient(135deg, #eaf7f6, #cfeeee);
+    border-radius: 14px;
+    color: #1f3f3f;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --------------------
+   Buttons
+-------------------- */
+button {
+    background: linear-gradient(135deg, #2f8f83, #5fc2b5);
+    width: auto;
+    height: auto;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* --------------------
+   Footer
+-------------------- */
+footer {
+    background: #0f0f0f;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+/* Footer columns */
+footer > div {
+    margin: 20px 40px;
+    max-width: 250px;
+}
+
+/* Footer text */
+footer p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Headings inside footer */
+footer p:first-child {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
